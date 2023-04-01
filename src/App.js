@@ -1,7 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo.svg'
+import './App.css'
 
 function App() {
+  const appName = process.env.REACT_APP_NAME
+  console.log(`appName: ${ appName }`)
   return (
     <div className="App">
       <header className="App-header">
@@ -14,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
